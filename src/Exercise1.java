@@ -23,7 +23,7 @@ public class Exercise1 {
                 if (userInput >= 1 && userInput <= 5) {
                     System.out.println("Hai selezionato l'elemento " + userInput + ": " + arrayInteri[userInput - 1]);
                 } else if (userInput != 0) {
-                    System.out.println("Input non valido. Inserisci un numero tra 1 e 5 o 0 per uscire.");
+                    System.err.println("Input non valido. Inserisci un numero tra 1 e 5 o 0 per uscire.");
                 }
             } while (userInput != 0);
         } catch (NumberFormatException ex) {
