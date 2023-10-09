@@ -31,7 +31,7 @@ public class Exercise2 {
 
     }
 
-    public static double calcConsumption(double km, double liters) {
+    public static int calcConsumption(int km, int liters) {
         return km / liters;
     }
 }
