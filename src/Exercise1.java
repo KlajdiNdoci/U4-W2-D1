@@ -18,7 +18,7 @@ public class Exercise1 {
             int userInput;
             do {
                 System.out.print("Inserisci un numero (1-5) o 0 per uscire: ");
-                userInput = input.nextInt();
+                userInput = Integer.parseInt(input.nextLine());
 
                 if (userInput >= 1 && userInput <= 5) {
                     System.out.println("Hai selezionato l'elemento " + userInput + ": " + arrayInteri[userInput - 1]);
@@ -27,9 +27,9 @@ public class Exercise1 {
                 }
             } while (userInput != 0);
         } catch (NumberFormatException ex) {
-            System.out.println("Hai inserito un valore non numerico");
+            System.err.println("Hai inserito un valore non numerico");
         } catch (Exception ex) {
-            System.out.println("Errore generico");
+            System.err.println("Errore generico");
         } finally {
             input.close();
         }
