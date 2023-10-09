@@ -23,8 +23,6 @@ public class ContoOnline {
 
             } else if (x > maxPrelievo) {
                 throw new BancaException("il prelievo non è disponibile");
-            } else if (x > saldo) {
-                throw new BancaException("il prelievo non è disponibile");
             }
         }
     }
